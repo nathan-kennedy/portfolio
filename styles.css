@@ -1,0 +1,80 @@
+html {
+  cursor: crosshair;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  color: rgb(120, 137, 150);
+  font-family: Outfit;
+  height: 20px;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 4em 1fr;
+  background-color: lightblue;
+}
+
+.logo {
+  text-align: center;
+  width: 4em;
+  display: inline-block;
+  font-family: Outfit;
+  font-weight: 700;
+}
+
+.menu {
+  display: inline-block;
+  flex-direction: row;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 1rem 0 1rem;
+  text-transform: uppercase;
+}
+
+li {
+  float: right;
+  padding: 0 .4rem 0 .4rem;
+}
+
+li:hover {
+  background-color: rgb(230, 239, 246);
+  cursor: pointer;
+  color: lightblue;
+  transition: all .3s ease;
+}
+
+.logo:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.main {
+  font-family: "Source Serif Pro";
+  height: 2000px;
+}
+
+.hero-type h1 {
+  position: fixed;
+  font-family: Outfit;
+  text-align: center;
+  font-weight: 900;
+  font-size: 10.5vw;
+  line-height: .72em;
+  margin: 0 0 0 0;
+  padding-top: .8rem;
+  color: lightblue;
+}
+
+.kerning {
+  letter-spacing: -.25rem;
+}
+
+.kerning2 {
+  letter-spacing: .27;
+}
