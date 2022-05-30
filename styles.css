@@ -13,24 +13,27 @@ nav {
 
 .bar {
   display: grid;
-  grid-template-columns: 4em 1fr;
+  grid-template-columns: 2em 1fr;
   background-color: lightblue;
 }
 
 .logo {
   text-align: center;
-  width: 3em;
+  width: 2em;
   display: inline-block;
   font-family: Outfit;
   font-weight: 700;
 }
 
 .menu {
-  flex-wrap: nowrap;
   width: 100%;
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: end;
   list-style-type: none;
   margin: 0 .5rem 0 0;
   text-transform: uppercase;
