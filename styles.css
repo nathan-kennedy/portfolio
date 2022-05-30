@@ -19,27 +19,26 @@ nav {
 
 .logo {
   text-align: center;
-  width: 4em;
+  width: 3em;
   display: inline-block;
   font-family: Outfit;
   font-weight: 700;
 }
 
 .menu {
-  display: inline-block;
-  flex-direction: row;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
 ul {
   list-style-type: none;
-  margin: 0 1rem 0 1rem;
+  margin: 0 .5rem 0 0;
   text-transform: uppercase;
 }
 
 li {
   float: right;
-  padding: 0 .4rem 0 .4rem;
+  padding: 0 .4rem 0 0;
 }
 
 li:hover {
