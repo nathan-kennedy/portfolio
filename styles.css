@@ -1,12 +1,17 @@
 :root {
-  --lightblue: lightblue;
-  --slateblue: rgb(120, 137, 150);
+  --blue: rgb(72, 88, 166);
+  --slateblue: rgb(176, 192, 204);
 }
 
+header {
+  width: 100vw;
+  height: 
+
+}
 nav {
   position: fixed;
   z-index: 999;
-  width: 100vw;
+  width: 100%;
   font-family: Outfit;
 }
 
@@ -14,7 +19,7 @@ nav {
   padding: 0 10%; 
   display: grid;
   grid-template-columns: 20% 1fr;
-  background-color: lightblue;
+  background-color: var(--blue);
 }
 
 .logo {
@@ -29,9 +34,7 @@ nav {
 
 .logo:hover {
   cursor: pointer;
-  color: var(--slateblue);
   transition: all .3s ease;
-
 }
 
 .menu {
@@ -65,47 +68,48 @@ li:hover {
   align-items: center;
   background-color: rgb(230, 239, 246);
   cursor: pointer;
-  color: lightblue;
+  color: rgb(153, 164, 223);
   height: 100%;
   transition: all .3s ease;
 }
 
-.main {
+section.nav-block-text {
   font-family: "Source Serif Pro";
-  height: 100vh;
+  width: 100%;
 }
 
 .hero-type {
   position: fixed;
   margin: 0;
   padding: 0;
-  width: 106vw;
+  width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   cursor: default;
+  z-index: 998;
 }
 
 .left-block {
   text-align: right;
   left: 0;
   padding: 0;
-  width: 10%;
+  width: 10.5%;
   margin: 0;
   margin-top: 4vw;
   height: 5.7vw;
-  background-color: lightblue;
+  background-color: var(--blue);
 }
 
 .right-block {
   text-align: right;
   right: 0;
   padding: 0;
-  width: 10%;
+  width: 10.5%;
   margin: 0;
   margin-top: 4vw;
   height: 5.7vw;
-  background-color: lightblue;
+  background-color: var(--blue);
 }
 
 .h1 {
@@ -119,13 +123,13 @@ li:hover {
   font-family: Outfit;
   text-align: center;
   font-weight: 900;
-  font-size: 8.6vw;
+  font-size: 8.2vw;
   line-height: 6.3vw;
   margin: 0;
   border: none;
   margin-top: 3.4vw;
   padding: 0;
-  color: lightblue;
+  color: var(--blue);
 }
 
 .kerning {
@@ -136,18 +140,24 @@ li:hover {
   letter-spacing: .27;
 }
 
+.hero-page {
+  width: 100vw;
+  height: 100vh;
+}
+#cards {
+  height: 100vh;
+  background-color: rgb(247, 247, 247);
+
+}
 .cards {
   display: grid;
   grid-template-columns: 2fr 1.5fr 2fr;
   column-gap: 2rem;
-  margin-top: 100vh;
-  background-color: rgb(247, 247, 247);
-  height: 120vh;
   width: 80%;
-  padding-left: 9%;
-  padding-right: 9%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin: 0;
-  position: absolute;
+  position: block;
   z-index: -1;
 }
 
@@ -185,36 +195,13 @@ li:hover {
   position: relative;
   left: 80%;
   bottom: -60%;
-
 }
-
 .coding-languages {
-  width: 20vw;
   display: flex;
-  flex-direction: row;
-  width: 82%;
-  padding-top: 60vh;  
-  padding-left: 9%;
-  padding-right: 9%;
+  margin: 15vh 10% 0 15%;
 }
 
 .post-it {
-  width: 50%;
-  background-color: transparent;
-  margin: -8vh 0 0 0;
-  padding: 0;
-
-}
-
-.svgs {
-  height: 20vh;
-  display: none;
-}
-
-.javascript {
-  padding-left: 2%;
-  padding-top: 2%;
-  height: 17vh;
 }
 
 .form {
@@ -222,7 +209,7 @@ li:hover {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--lightblue);
+  background-color: var(--blue);
   width: 100%;
   padding: 0;
   margin: 0;
