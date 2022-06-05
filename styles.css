@@ -191,17 +191,24 @@ li:hover {
 .coding-languages {
   width: 20vw;
   display: flex;
-  justify-content: center;
   flex-direction: row;
   width: 82%;
-  padding-top: 70vh;
+  padding-top: 60vh;  
   padding-left: 9%;
   padding-right: 9%;
-  padding-bottom: 20vh;
+}
+
+.post-it {
+  width: 50%;
+  background-color: transparent;
+  margin: -8vh 0 0 0;
+  padding: 0;
+
 }
 
 .svgs {
   height: 20vh;
+  display: none;
 }
 
 .javascript {
@@ -210,8 +217,71 @@ li:hover {
   height: 17vh;
 }
 
-form {
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-color: var(--lightblue);
   width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.napkin {
+  width: 550px;
+  height: 550px;
+  padding: 0;
+  margin: 0;
+  margin-top: 8vh;
+  transform: rotate(6deg);
+  filter: drop-shadow(2px 2px 1px #222);
+}
+
+.contact {
+  mix-blend-mode: multiply;
+  font-family: reenie-beanie, sans-serif;
+  font-size: 1.9em;
+  font-weight: bold;
+  color: rgb(19, 19, 59);
+  width: 550px;
+  height: 550px;
+  position: absolute;
+  z-index: 4;
+  padding: 0;
+  margin: 0;
+  margin-top: 8vh;
+  transform: rotate(6deg);
+}
+
+.fields {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 6vh;
+}
+
+#name {
+    background: transparent;
+    outline: 0;
+    border-width: 0;
+    border-color: rgb(19, 19, 59);
+}
+
+#email {
+  background: transparent;
+  outline: 0;
+  border-width: 0;
+  border-color: rgb(19, 19, 59);
+}
+
+#textarea {
+  height:3em;
+  margin-top: -11vh;
+  background: transparent;
+  outline: 0;
+  border-width: 0;
+  border-color: rgb(19, 19, 59);
 }

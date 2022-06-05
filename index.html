@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/xux4lsh.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;500;900&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="resets.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/xux4lsh.css">
     <title>Nathan Kennedy's Portfolio</title>
     
 </head>
@@ -55,13 +55,32 @@
       </div>
     </div>
     <div class="coding-languages">
+      <img src="/images/post-it.png" class="post-it">
       <img class="html5 svgs" src="/images/coding language vector logos/HTML 5.svg">
       <img class="css3 svgs" src="/images/coding language vector logos/CSS.svg">
       <img class="javascript svgs" src="/images/coding language vector logos/JavaScript.svg">
     </div>
   </section>
-  <form class="contact">
-    
-  </form>
+  <section id="form">
+    <div class="form">
+      <img class="napkin" src="/images/napkin-coffee-ring.png" width="721" height="718">
+      <form class="contact" action="mailto:nathankennedy1@gmail.com">
+        <div class="fields">
+          <div class="napkin-name">
+            <label for="name">NAME: <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="name" type="text" name="name">
+          </div>
+          <div class="napkin-email">
+            <label for="email">EMAIL: <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="email" type="email" name="email">
+          </div>
+          <div class="napkin-textarea">
+            <label for="textarea">MESSAGE: <abbr title="required" aria-label="required">*</abbr></label>
+            <textarea id="textarea" type="textarea" name="textarea"></textarea>
+          </div>
+        </div>
+      </form>
+    </div> 
+  </section>
 </body>
 </html>
