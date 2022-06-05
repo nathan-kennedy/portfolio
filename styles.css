@@ -1,28 +1,37 @@
-html {
-  cursor: crosshair;
+:root {
+  --lightblue: lightblue;
+  --slateblue: rgb(120, 137, 150);
 }
 
 nav {
   position: fixed;
   z-index: 999;
   width: 100vw;
-  color: rgb(120, 137, 150);
   font-family: Outfit;
-  height: 20px;
 }
 
 .bar {
+  padding: 0 10%; 
   display: grid;
-  grid-template-columns: 2em 1fr;
+  grid-template-columns: 20% 1fr;
   background-color: lightblue;
 }
 
 .logo {
-  text-align: center;
-  width: 2em;
-  display: inline-block;
-  font-family: Outfit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 8vw;
   font-weight: 700;
+  font-size: 3vw;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: var(--slateblue);
+  transition: all .3s ease;
+
 }
 
 .menu {
@@ -30,46 +39,92 @@ nav {
 }
 
 ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  height: 4vw;
+  margin: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: var(--slateblue);
+}
+
+li {
+  font-size: 1.5vw;
+  float: right;
+  padding: 0 .9rem 0 .9rem;
+}
+
+li:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: end;
-  list-style-type: none;
-  margin: 0 .5rem 0 0;
-  text-transform: uppercase;
-}
-
-li {
-  float: right;
-  padding: 0 .4rem 0 0;
-}
-
-li:hover {
+  align-items: center;
   background-color: rgb(230, 239, 246);
   cursor: pointer;
   color: lightblue;
+  height: 100%;
   transition: all .3s ease;
-}
-
-.logo:hover {
-  color: white;
-  cursor: pointer;
 }
 
 .main {
   font-family: "Source Serif Pro";
-  height: 2000px;
+  height: 100vh;
 }
 
-.hero-type h1 {
+.hero-type {
   position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 106vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: default;
+}
+
+.left-block {
+  text-align: right;
+  left: 0;
+  padding: 0;
+  width: 10%;
+  margin: 0;
+  margin-top: 4vw;
+  height: 5.7vw;
+  background-color: lightblue;
+}
+
+.right-block {
+  text-align: right;
+  right: 0;
+  padding: 0;
+  width: 10%;
+  margin: 0;
+  margin-top: 4vw;
+  height: 5.7vw;
+  background-color: lightblue;
+}
+
+.h1 {
+  display: inline-block;
+  width: 84%;
+  border: none;
+  line-height: 6.8vw;
+
+}
+.hero-type h1 {
   font-family: Outfit;
   text-align: center;
   font-weight: 900;
-  font-size: 10.5vw;
-  line-height: .72em;
-  margin: 0 0 0 0;
-  padding-top: .8rem;
+  font-size: 8.6vw;
+  line-height: 6.3vw;
+  margin: 0;
+  border: none;
+  margin-top: 3.4vw;
+  padding: 0;
   color: lightblue;
 }
 
@@ -79,4 +134,84 @@ li:hover {
 
 .kerning2 {
   letter-spacing: .27;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 2fr;
+  column-gap: 2rem;
+  margin-top: 100vh;
+  background-color: rgb(247, 247, 247);
+  height: 120vh;
+  width: 80%;
+  padding-left: 9%;
+  padding-right: 9%;
+  margin: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.logos, .certifications, .sites {
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+  background-color: white;
+  height: 40vh;
+}
+
+.sticker {
+  width: 10vw;
+}
+
+.well-done {
+  transform: rotate(26deg);
+  filter: drop-shadow(2px 2px 1px #222);
+  position: relative;
+  left: -20%;
+
+}
+
+.smiley {
+  transform: rotate(-15deg);
+  filter: drop-shadow(2px 2px 1px #222);
+  position: relative;
+  left: 30%;
+  top: 78%;
+}
+
+.super {
+  transform: rotate(-45deg);
+  filter: drop-shadow(2px 2px 1px #222);
+  position: relative;
+  left: 80%;
+  bottom: -60%;
+
+}
+
+.coding-languages {
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 82%;
+  padding-top: 70vh;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 20vh;
+}
+
+.svgs {
+  height: 20vh;
+}
+
+.javascript {
+  padding-left: 2%;
+  padding-top: 2%;
+  height: 17vh;
+}
+
+form {
+  height: 100vh;
+  background-color: var(--lightblue);
+  width: 100%;
 }
