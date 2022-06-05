@@ -81,3 +81,10 @@
   </section>
 </body>
 </html>
+<script>
+  function handleFullWidthSizing() {
+  const scrollbarWidth = window.innerWidth - document.body.clientWidth
+
+  document.querySelector('myElement').style.width = `calc(100vw - ${scrollbarWidth}px)`
+}
+</script>
