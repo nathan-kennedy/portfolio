@@ -1,6 +1,6 @@
 :root {
-  --blue: rgb(72, 88, 166);
-  --slateblue: rgb(176, 192, 204);
+  --primary-color: rgb(239, 201, 74);
+  --secondary-color: rgb(246, 242, 204);
 }
 header {
   width: 100vw;
@@ -12,7 +12,7 @@ nav {
   z-index: 999;
 }
 .bar {
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   display: grid;
   grid-template-columns: 20% 1fr;
   overflow: hidden;
@@ -37,7 +37,7 @@ nav {
 }
 ul {
   align-items: center;
-  color: var(--slateblue);
+  color: white;
   display: flex;
   flex-direction: row;
   height: 4vw;
@@ -55,8 +55,8 @@ li {
 }
 li:hover {
   align-items: center;
-  background-color: rgb(230, 239, 246);
-  color: rgb(153, 164, 223);
+  background-color: rgb(246, 242, 204);
+  color: var(--primary-color);
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -83,38 +83,36 @@ section.nav-block-text {
   z-index: 998;
 }
 .left-block {
-  background-color: var(--blue);
-  height: 5.7vw;
+  background-color: var(--primary-color);
+  height: 5.4vw;
   left: 0;
   margin: 0;
   margin-top: 4vw;
   padding: 0;
-  text-align: right;
   width: 10.5%;
 }
 .right-block {
-  background-color: var(--blue);
-  height: 5.7vw;
+  background-color: var(--primary-color);
+  height: 5.4vw;
   margin: 0;
   margin-top: 4vw;
   padding: 0;
   right: 0;
-  text-align: right;
   width: 10.5%;
 }
 .h1 {
   border: none;
   display: inline-block;
-  line-height: 6.8vw;
   width: 84%;
 }
 .hero-type h1 {
+  background-color: var(--secondary-color);
   border: none;
-  color: var(--blue);
+  color: var(--primary-color);
   font-family: Outfit;
   font-size: 8.2vw;
   font-weight: 900;
-  line-height: 6.3vw;
+  line-height: 6vw;
   margin: 0;
   margin-top: 3.4vw;
   padding: 0;
@@ -131,7 +129,7 @@ section.nav-block-text {
   width: 100%;
 }
 #cards {
-  background-color: rgb(247, 247, 247);
+  background-color: var(--secondary-color);
   height: 100vh;
 }
 .cards {
@@ -170,26 +168,27 @@ section.nav-block-text {
   transform: rotate(-15deg);
 }
 .super {
-  bottom: -60%;
+  bottom: -40%;
   filter: drop-shadow(2px 2px 1px #222);
   right: -80%;
   position: relative;
-  transform: rotate(-45deg);
+  transform: rotate(-5deg);
 }
 .coding-languages {
   display: flex;
-  justify-content: right;
+  justify-content: left;
   margin: 15vh 0 0 0;
   overflow: hidden;
   width: 100vw;
 }
 .post-it {
-  margin: 0 15% 0 0;
+  margin: -10% 5% 0 5%;
   padding: 0;
+  position: absolute;
 }
 .form {
   align-items: center;
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   display: flex;
   height: 100vh;
   justify-content: center;
