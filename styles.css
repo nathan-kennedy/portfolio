@@ -5,6 +5,10 @@
 header {
   width: 100vw;
 }
+a {
+  text-decoration: none;
+  color: unset;
+}
 nav {
   font-family: Outfit;
   position: fixed;
@@ -20,7 +24,7 @@ nav {
 }
 .logo {
   align-items: center;
-  color: white;
+  color: var(--secondary-color);
   display: flex;
   font-size: 3vw;
   font-weight: 700;
@@ -37,7 +41,7 @@ nav {
 }
 ul {
   align-items: center;
-  color: white;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: row;
   height: 4vw;
@@ -128,9 +132,36 @@ section.nav-block-text {
   height: 100vh;
   width: 100%;
 }
+.story {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100vw;
+  height: 100vh;
+}
+.headshot {
+  display: inline-block;
+  padding: 9.4vw 0 0 0;
+  left: 0;
+}
+.blurb {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Serif Pro";
+  font-size: 2vw;
+  color: black;
+  width: 40vw;
+  padding: 14.4vw 10% 0 6%;
+}
+.blurb p {
+  text-justify: left;
+  line-height: 2.7vw;
+
+}
 #cards {
   background-color: var(--secondary-color);
   height: 100vh;
+  padding-top: 9.4vw;
 }
 .cards {
   column-gap: 2rem;
@@ -149,6 +180,25 @@ section.nav-block-text {
   margin: 0;
   margin-top: 2rem;
   padding: 0;
+  box-shadow: 2px 2px 2px rgb(98, 96, 79);
+}
+.certifications {
+  background-image: url(/images/cert.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.logos{
+  background-image: url(/images/eail.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+.sites {
+  background-image: url(/images/fpf.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position-y: top;
 }
 .sticker {
   width: 10vw;
@@ -198,7 +248,7 @@ section.nav-block-text {
   width: 100vw;
 }
 .napkin {
-  filter: drop-shadow(2px 2px 1px #222);
+  filter: drop-shadow(2px 2px 1px rgb(94, 79, 28));
   height: 550px;
   margin: 0;
   margin-top: 8vh;
