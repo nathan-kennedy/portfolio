@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 :root {
   --primary-color: rgb(239, 201, 74);
@@ -236,6 +240,7 @@ section.nav-block-text {
 }
 .post-it {
   margin: -10% 5% 0 5%;
+  max-width: 100%;
   padding: 0;
   position: absolute;
 }
